@@ -11,7 +11,7 @@ with open ('feed.yaml','r') as file:
     })
 
 channel_element = xml_tree.SubElement(rss_element,'channel') 
-link_prefix = yaml_data['link'];  
+#link_prefix = yaml_data['link'];  
 xml_tree.SubElement(channel_element,'title').text = yaml_data['title']
 xml_tree.SubElement(channel_element,'description').text = yaml_data['description']
 xml_tree.SubElement(channel_element,'author').text = yaml_data['author']
